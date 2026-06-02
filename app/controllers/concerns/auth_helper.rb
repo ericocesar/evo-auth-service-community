@@ -132,10 +132,10 @@ module AuthHelper
     
     # Known second-level domains for ccTLDs (e.g. .com.br, .co.uk, .org.br, .net.au)
     # These TLDs require 3 segments to form the registrable domain.
-    CC_SLD = %w[com co org net gov edu ac mil gob ad nom pro fin agr art esp etc far
+    cc_sld = %w[com co org net gov edu ac mil gob ad nom pro fin agr art esp etc far
                 imb ind inf jus lei med mus not psi rec slg tmp tur tv veto web].freeze
     
-    if domain_parts.size >= 3 && CC_SLD.include?(domain_parts[-2]) && domain_parts[-1].length <= 3
+    if domain_parts.size >= 3 && cc_sld.include?(domain_parts[-2]) && domain_parts[-1].length <= 3
       # Multi-segment ccTLD (bchat.com.br, bchat.co.uk) — use last 3 segments
       ".#{domain_parts[-3]}.#{domain_parts[-2]}.#{domain_parts[-1]}"
     else
