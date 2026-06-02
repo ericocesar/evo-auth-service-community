@@ -115,35 +115,32 @@ module AuthHelper
     request_host = request.host
     
     # Em desenvolvimento com ngrok, NÃO definir domain para permitir cookies funcionarem
-    # quando frontend e auth service usam o mesmo domínio ngrok
-    # Cookies não podem ser compartilhados entre domínios diferentes do ngrok
-    # (ex: evo-app-davidson.ngrok.app e evo-auth-davidson.ngrok.app)
     if Rails.env.development?
-      # Para ngrok, não definir domain - cookie será específico do domínio
-      # Isso permite que funcione quando ambos os serviços usam o mesmo domínio
       if request_host.include?('ngrok')
         return nil
       end
-      # Para localhost, não definir domain
       return nil if request_host == 'localhost' || request_host =~ /\A\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\z/
     end
     
-    # Em produção, usar lógica normal de domínio
     return nil if Rails.env.test?
     
     # Verifica se o host é um IP ou localhost
     return nil if request_host =~ /\A\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\z/ || request_host == 'localhost'
     
-    # Extrai o domínio principal para definir cookies entre subdomínios
     domain_parts = request_host.split('.')
+    return nil if domain_parts.size < 2
     
-    # Para garantir que não definimos cookies para TLDs genéricos
-    if domain_parts.size >= 2
-      # Retorna os dois últimos segmentos do domínio (ex: example.com)
-      ".#{domain_parts[-2]}.#{domain_parts[-1]}"
+    # Known second-level domains for ccTLDs (e.g. .com.br, .co.uk, .org.br, .net.au)
+    # These TLDs require 3 segments to form the registrable domain.
+    CC_SLD = %w[com co org net gov edu ac mil gob ad nom pro fin agr art esp etc far
+                imb ind inf jus lei med mus not psi rec slg tmp tur tv veto web].freeze
+    
+    if domain_parts.size >= 3 && CC_SLD.include?(domain_parts[-2]) && domain_parts[-1].length <= 3
+      # Multi-segment ccTLD (bchat.com.br, bchat.co.uk) — use last 3 segments
+      ".#{domain_parts[-3]}.#{domain_parts[-2]}.#{domain_parts[-1]}"
     else
-      # Fallback para o host completo se não conseguirmos determinar o domínio principal
-      request_host
+      # Standard TLD — use last 2 segments (example.com)
+      ".#{domain_parts[-2]}.#{domain_parts[-1]}"
     end
   end
 
