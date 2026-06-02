@@ -1,6 +1,6 @@
-# Contributing to Evo CRM Auth Service
+# Contributing to BChat CRM Auth Service
 
-Thanks for your interest in contributing to Evo CRM Auth Service! This document
+Thanks for your interest in contributing to BChat CRM Auth Service! This document
 outlines how to contribute effectively.
 
 ## Code of Conduct
@@ -81,7 +81,7 @@ governed separately by [TRADEMARKS.md](./TRADEMARKS.md).
 - **Documentation**: [docs.evolutionfoundation.com.br](https://docs.evolutionfoundation.com.br)
 - **Email**: suporte@evofoundation.com.br
 
-Thanks for helping make Evo CRM Auth Service better!
+Thanks for helping make BChat CRM Auth Service better!
 
 ---
 

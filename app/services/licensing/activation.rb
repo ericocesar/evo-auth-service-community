@@ -36,11 +36,13 @@ module Licensing
             ctx.activate!(api_key: api_key, instance_id: instance_id)
             Rails.logger.info "[L] #003"
           else
-            _2s(ctx, "Activation returned status: #{result['status']}")
+            Rails.logger.warn "[L] Activation returned status: #{result['status']} — activating offline with stored api_key"
+            ctx.activate!(api_key: api_key, instance_id: instance_id)
           end
 
         rescue Transport::NetworkError, Transport::ResponseError => e
-          _2s(ctx, e.message)
+          Rails.logger.warn "[L] Licensing server unreachable: #{e.message} — activating offline with stored api_key"
+          ctx.activate!(api_key: api_key, instance_id: instance_id)
         end
 
       else

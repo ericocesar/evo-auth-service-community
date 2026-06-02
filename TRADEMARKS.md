@@ -1,23 +1,23 @@
-# Evo CRM Auth Service — Trademark and Brand Assets Policy
+# BChat CRM Auth Service — Trademark and Brand Assets Policy
 
 Version 1.0, 2026.05.06
 
-"Evolution Foundation", "Evolution" and "Evo CRM Auth Service" are trademarks of
-Evolution Foundation. The "evoauth" wordmark and the Evo CRM Auth Service
+"Evolution Foundation", "Evolution" and "BChat CRM Auth Service" are trademarks of
+Evolution Foundation. The "evoauth" wordmark and the BChat CRM Auth Service
 logo are trademarks of Evolution Foundation.
 
 ## 1. Scope and purpose
 
-This policy governs the use of Evo CRM Auth Service trademarks and brand assets.
+This policy governs the use of BChat CRM Auth Service trademarks and brand assets.
 It is intended to protect users from confusion and to preserve the official
-Evo CRM Auth Service visual identity.
+BChat CRM Auth Service visual identity.
 
 This policy applies to any use of:
-(a) the product names and marks "Evolution Foundation", "Evolution" and "Evo CRM Auth Service";
+(a) the product names and marks "Evolution Foundation", "Evolution" and "BChat CRM Auth Service";
 (b) the official logo and wordmark: the "evoauth" wordmark and any
     associated icon in neon green;
 (c) the copyright line "© 2026 Evolution Foundation"; and
-(d) any materials that implement or express the Evo CRM Auth Service official look
+(d) any materials that implement or express the BChat CRM Auth Service official look
     and feel, including the Protected Visual Identity Elements listed in Section 3.
 
 This policy does not change the software license for the source code, which is
@@ -26,23 +26,23 @@ brand assets.
 
 ## 2. Permitted trademark and brand asset use
 
-2.1. You may truthfully refer to Evo CRM Auth Service to describe that your software
+2.1. You may truthfully refer to BChat CRM Auth Service to describe that your software
 is based on, compatible with, or derived from this project, provided that such
 use does not imply endorsement by Evolution Foundation.
 
 2.2. You may distribute and publicly host unmodified official builds of
-Evo CRM Auth Service that include Evo CRM Auth Service brand assets, provided that you
+BChat CRM Auth Service that include BChat CRM Auth Service brand assets, provided that you
 comply with Section 3 and do not suggest endorsement beyond being an official
 unmodified build.
 
-2.3. You may use Evo CRM Auth Service marks in nominative ways, such as
-"based on Evo CRM Auth Service", provided that the use is accurate and does not
+2.3. You may use BChat CRM Auth Service marks in nominative ways, such as
+"based on BChat CRM Auth Service", provided that the use is accurate and does not
 create confusion.
 
 ## 3. Protected Visual Identity Elements (Brand Assets)
 
 The following are the "Protected Visual Identity Elements":
-(a) Product names and marks: "Evolution Foundation", "Evolution" and "Evo CRM Auth Service";
+(a) Product names and marks: "Evolution Foundation", "Evolution" and "BChat CRM Auth Service";
 (b) Official logo and wordmark: the "evoauth" wordmark and any associated icon;
 (c) Copyright line: "© 2026 Evolution Foundation";
 (d) Official palette:
@@ -62,26 +62,26 @@ The following are the "Protected Visual Identity Elements":
 ## 4. Restrictions for forks, modified versions, and redistributions
 
 4.1. **No modification of Protected Visual Identity Elements when using
-Evo CRM Auth Service brand assets.** If you distribute or publicly host any version
-of the user interface that uses Evo CRM Auth Service brand assets, you may not
+BChat CRM Auth Service brand assets.** If you distribute or publicly host any version
+of the user interface that uses BChat CRM Auth Service brand assets, you may not
 remove, replace, modify, disable, or bypass any Protected Visual Identity Element.
 
-4.2. **Modified UI must remove Evo CRM Auth Service brand assets.**
+4.2. **Modified UI must remove BChat CRM Auth Service brand assets.**
 If you distribute or publicly host a modified user interface or user experience
 (including changes to branding or visual identity), you must:
-(a) remove and replace all Evo CRM Auth Service trademarks and brand assets from
+(a) remove and replace all BChat CRM Auth Service trademarks and brand assets from
     the user interface, product name display, and related marketing materials
     for that distribution; and
-(b) choose a name and branding that are clearly distinct from Evo CRM Auth Service.
+(b) choose a name and branding that are clearly distinct from BChat CRM Auth Service.
 
 4.3. **No endorsement.**
-You may not use Evo CRM Auth Service trademarks or brand assets in a way that
+You may not use BChat CRM Auth Service trademarks or brand assets in a way that
 implies Evolution Foundation sponsors, endorses, or is affiliated with your
 distribution, except for unmodified official builds.
 
 4.4. **No derivative works of the logo and wordmark.**
 You may not modify, adapt, recolor, redesign, or create derivative works of the
-Evo CRM Auth Service logo or wordmark.
+BChat CRM Auth Service logo or wordmark.
 
 ## 5. Permission requests
 
@@ -90,8 +90,8 @@ from Evolution Foundation. Contact: **suporte@evofoundation.com.br**.
 
 ## 6. Enforcement and termination
 
-Any violation of this policy terminates your permission to use Evo CRM Auth Service
-brand assets. You must promptly cease use and remove Evo CRM Auth Service trademarks
+Any violation of this policy terminates your permission to use BChat CRM Auth Service
+brand assets. You must promptly cease use and remove BChat CRM Auth Service trademarks
 and brand assets from your distribution and any public hosting.
 
 ## 7. Disclaimer

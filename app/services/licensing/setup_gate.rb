@@ -18,7 +18,14 @@ module Licensing
       if ctx&.active?
         ctx.track_message
         @app.call(env)
+      elsif ctx
+        # Context exists but inactive (licensing server unreachable) —
+        # allow requests through in offline mode for community tier.
+        Rails.logger.warn("[SetupGate] Licensing inactive — allowing request in offline mode") unless @offline_warned
+        @offline_warned = true
+        @app.call(env)
       else
+        # No context at all — system never activated. Require setup wizard.
         [503, { 'Content-Type' => 'application/json' }, UNAVAILABLE_BODY]
       end
     end

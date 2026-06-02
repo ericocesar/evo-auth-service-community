@@ -4,10 +4,10 @@
   </a>
 </p>
 
-<h1 align="center">Evo CRM Auth Service</h1>
+<h1 align="center">BChat CRM Auth Service</h1>
 
 <p align="center">
-  Authentication, RBAC, OAuth 2.0 and token issuance service for the Evo CRM Community.
+  Authentication, RBAC, OAuth 2.0 and token issuance service for the BChat CRM Community.
 </p>
 
 <p align="center">
@@ -28,11 +28,11 @@
 
 ## About
 
-**Evo CRM Auth Service** is the authentication and authorization microservice of the Evo CRM Community. Built on Ruby on Rails 7.1, it provides Bearer token authentication, OAuth 2.0 (Doorkeeper), Multi-Factor Authentication (TOTP, Email OTP, backup codes), Role-Based Access Control with simple `account_owner` / `agent` roles, and LGPD-compliant audit logging.
+**BChat CRM Auth Service** is the authentication and authorization microservice of the BChat CRM Community. Built on Ruby on Rails 7.1, it provides Bearer token authentication, OAuth 2.0 (Doorkeeper), Multi-Factor Authentication (TOTP, Email OTP, backup codes), Role-Based Access Control with simple `account_owner` / `agent` roles, and LGPD-compliant audit logging.
 
-## Part of the Evo CRM Community
+## Part of the BChat CRM Community
 
-Evo CRM Auth Service is part of the [Evo CRM Community](https://github.com/evolution-foundation/evo-crm-community) ecosystem maintained by Evolution Foundation. To use the full stack, clone the umbrella repository with submodules:
+BChat CRM Auth Service is part of the [BChat CRM Community](https://github.com/evolution-foundation/evo-crm-community) ecosystem maintained by Evolution Foundation. To use the full stack, clone the umbrella repository with submodules:
 
 ```bash
 git clone --recurse-submodules git@github.com:evolution-foundation/evo-crm-community.git
@@ -173,11 +173,11 @@ curl -X GET http://localhost:3001/api/v1/users \
 
 ## Architecture
 
-The auth service issues tokens consumed by all other services in the Evo CRM Community ecosystem:
+The auth service issues tokens consumed by all other services in the BChat CRM Community ecosystem:
 
 ```
                     ┌──────────────────────────┐
-                    │  Evo CRM Auth Service    │ ← (you are here)
+                    │  BChat CRM Auth Service    │ ← (you are here)
                     │  (token issuance, RBAC)  │
                     └────────────┬─────────────┘
                                  │ Bearer token
@@ -260,11 +260,11 @@ This service builds on excellent open-source software:
 
 ## License
 
-Evo CRM Auth Service is licensed under the Apache License 2.0. See [LICENSE](./LICENSE) for details.
+BChat CRM Auth Service is licensed under the Apache License 2.0. See [LICENSE](./LICENSE) for details.
 
 ## Trademarks
 
-"Evolution Foundation", "Evolution" and "Evo CRM Auth Service" are trademarks of Evolution Foundation. See [TRADEMARKS.md](./TRADEMARKS.md) for the brand assets policy.
+"Evolution Foundation", "Evolution" and "BChat CRM Auth Service" are trademarks of Evolution Foundation. See [TRADEMARKS.md](./TRADEMARKS.md) for the brand assets policy.
 
 Third-party attributions are documented in [NOTICE](./NOTICE).
 
