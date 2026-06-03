@@ -25,7 +25,11 @@ class GlobalConfigService
     # Priority 4: caller-supplied default
     default_value
   rescue StandardError => e
-    Rails.logger.warn("GlobalConfigService.load(#{config_key}) failed: #{e.message}")
+    if defined?(Rails) && Rails.logger
+      Rails.logger.warn("GlobalConfigService.load(#{config_key}) failed: #{e.message}")
+    else
+      warn "GlobalConfigService.load(#{config_key}) failed: #{e.message}"
+    end
     ENV.fetch(config_key, default_value)
   end
 end
